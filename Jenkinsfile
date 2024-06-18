@@ -23,6 +23,7 @@ pipeline {
                 script {
                     def variable = sh(script: 'date +"%H:%M"', returnStdout: true).trim()
                     sh "echo 'La hora actual es: $variable' >> ~/mi_carpeta_kokito/archivo.txt"
+                    sh "echo 'Eres mi esposito bonito' >> ~/mi_carpeta_kokito/archivo.txt"
                 }
             }
         }
