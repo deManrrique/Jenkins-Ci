@@ -5,7 +5,7 @@ pipeline {
         stage('Clonar Repositorio') {
             steps {
                 // Clonar el repositorio desde GitHub
-                git 'https://github.com/tu-usuario/tu-repositorio.git'
+                 git 'https://github.com/deManrrique/application.git'
             }
         }
         // Puedes agregar más etapas aquí para construir, probar, desplegar, etc.
