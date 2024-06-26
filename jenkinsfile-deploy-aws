@@ -22,7 +22,7 @@ pipeline {
             steps {
                 // Mostrar mensaje en la consola
                 echo 'usando Terraform'
-                terraform init
+                sh 'terraform init'
                     
                
             }
