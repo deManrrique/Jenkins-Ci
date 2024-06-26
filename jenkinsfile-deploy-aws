@@ -8,6 +8,14 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/deManrrique/application.git'
             }
         }
+
+      stage('Compilar Código') {
+            steps {
+                // Mostrar mensaje en la consola
+                echo 'Compilando el código'
+               
+            }
+        }
         // Puedes agregar más etapas aquí para construir, probar, desplegar, etc.
     }
 }
