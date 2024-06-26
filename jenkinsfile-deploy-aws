@@ -9,10 +9,21 @@ pipeline {
             }
         }
 
-      stage('Compilar Código') {
+      stage('compile code') {
             steps {
                 // Mostrar mensaje en la consola
                 echo 'Compilando el código'
+                    
+               
+            }
+        }
+
+      stage('creating infrastructure') {
+            steps {
+                // Mostrar mensaje en la consola
+                echo 'usando Terraform'
+                terraform init
+                    
                
             }
         }
