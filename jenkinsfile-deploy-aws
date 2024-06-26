@@ -1,11 +1,11 @@
 pipeline {
     agent any
- 
+
     stages {
         stage('Clonar Repositorio') {
             steps {
-                // Clonar el repositorio desde GitHub
-                 git 'https://github.com/deManrrique/application.git'
+                // Clonar el repositorio desde GitHub especificando la rama
+                git branch: 'main', url: 'https://github.com/deManrrique/application.git'
             }
         }
         // Puedes agregar más etapas aquí para construir, probar, desplegar, etc.
