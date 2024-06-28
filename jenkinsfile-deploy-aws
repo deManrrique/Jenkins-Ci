@@ -27,6 +27,18 @@ pipeline {
                
             }
         }
+
+            stage('Cargar Secreto') {
+                    steps {
+                        script {
+                            // Reemplaza 'my-secret-id' con el ID de tu secreto en Jenkins
+                            withCredentials([string(credentialsId: 'database-password', variable: 'MY_SECRET')]) {
+                                // El secreto se carga en MY_SECRET
+                                echo 'Secreto cargado'
+                            }
+                        }
+                    }
+                }
         // Puedes agregar más etapas aquí para construir, probar, desplegar, etc.
     }
 }
