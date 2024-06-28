@@ -35,7 +35,7 @@ pipeline {
                             withCredentials([string(credentialsId: 'database-password', variable: 'MY_SECRET')]) {
                                 // El secreto se carga en MY_SECRET
                                 echo 'Secreto cargado'
-                                   echo "El secreto es: ${MY_SECRET}"
+                                   
                             }
                         }
                     }
